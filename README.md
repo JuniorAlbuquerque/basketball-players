@@ -8,7 +8,7 @@ Um simples projeto que consome uma API de informações de jogadores de basquete
 
 ## Run app
 
-- Para utilizar o app, basta clonar o projeto: https://github.com/JuniorAlbuquerque/todo-app-aurelia.git
+- Para utilizar o app, basta clonar o projeto: https://github.com/JuniorAlbuquerque/basketball-players.git
 - Instalar as dependências, com
   `yarn instal` ou `npm install`
 - Utilizar o cli para startar a aplicação, com `au run --watch`
