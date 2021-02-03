@@ -1,0 +1,29 @@
+<template>
+  <require from="./presentation/styles/global.css"></require>
+  <div
+    style="
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
+    <h1 style="font-size: 38px; letter-spacing: 1px;">
+      Basketball Players
+    </h1>
+    <!-- <ul>
+      <li>
+        <a route-href="home">Home</a>
+      </li>
+      <li>
+        <a route-href="about">About</a>
+      </li>
+      <li>
+        <a route-href="route: post; params.bind: {id: 'estudando-aurelia'}">
+          My Posts
+        </a>
+      </li>
+    </ul> -->
+    <router-view></router-view>
+  </div>
+</template>

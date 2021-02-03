@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: linear-gradient(50deg, rgba(0, 0, 0, 0.75), rgba(118, 0, 0, 0.8)),
+    url(../../../static/images/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #981717;
+
+  color: #fff;
+
+  font-family: 'Big Shoulders Display', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+input,
+button {
+  font-family: 'Big Shoulders Display', cursive;
+  outline: none;
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}

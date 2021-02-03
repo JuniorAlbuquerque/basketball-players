@@ -1,0 +1,55 @@
+<template>
+  <require from="./styles.css"></require>
+  <div
+    style="
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
+    <input
+      class="insert-id"
+      type=""
+      value.bind="id"
+      placeholder="Insira um id"
+    />
+
+    <button class="btn-search" click.delegate="getInfoPlayer(id)">
+      Buscar Jogador
+    </button>
+
+    <div if.bind="!player && show">
+      <lottie-player
+        class="anima"
+        src="https://assets1.lottiefiles.com/packages/lf20_Mwt9v0.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px;"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+
+    <div class="content-player" if.bind="player">
+      <p>
+        Id:
+        <span>${player.id}</span>
+      </p>
+      <p>
+        Nome:
+        <span>${player.first_name} ${player.last_name}</span>
+      </p>
+
+      <p>
+        Time:
+        <span>${player.team.full_name}</span>
+      </p>
+
+      <p>
+        Posição:
+        <span>${player.position}</span>
+      </p>
+    </div>
+  </div>
+</template>
